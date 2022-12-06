@@ -1,0 +1,20 @@
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.header__logo--dark {
+    color: #000000
+}
+
+.footer__logo--light {
+    color: var(--hero-text-color);
+}

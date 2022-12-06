@@ -1,0 +1,34 @@
+.work .section__title {
+    min-width: 366px;
+    text-align: center;
+    margin-right: auto; 
+    margin-left: auto;
+ }
+
+.work__list {
+    display: flex;
+    gap: 30px;
+}
+
+.work__wrapper-img {
+   position: relative;
+}
+
+.work__overlay-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__overlay-text {
+    color: var(--hero-text-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

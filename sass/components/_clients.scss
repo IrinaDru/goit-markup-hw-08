@@ -1,0 +1,29 @@
+.clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: color var(--hover-trans), border-color var(--hover-trans);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+} 
+
+.clients__logo {
+    fill: currentColor;
+}
