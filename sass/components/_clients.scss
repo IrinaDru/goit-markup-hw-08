@@ -1,6 +1,6 @@
 .clients__list {
 
-    @media (min-width: 480px) {
+    @media (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,15 +11,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+    gap: 30px;}
 }
 
 .clients__item {
-    @media (max-width: 767px) {
-        flex-basis: calc(100% / 2);}
 
-    @media (max-width: 1199px) {
-        flex-basis: calc(100% / 3);}
+    @media (max-width: 767px) {
+        flex-basis: calc((100% - 60px) / 2);}
+
+    @media (min-width: 768px) {
+        flex-basis: calc((100% - 90px) / 3);}
 }
 
 .clients__link {

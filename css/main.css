@@ -655,7 +655,7 @@ ul {
   fill: currentColor;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 1199px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,19 +680,20 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0;
+    gap: 30px;
   }
 }
 
 @media (max-width: 767px) {
   .clients__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   .clients__item {
-    -ms-flex-preferred-size: 33.3333333333%;
-        flex-basis: 33.3333333333%;
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
 
