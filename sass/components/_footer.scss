@@ -5,12 +5,21 @@
 }
 
 .footer__container {
+    @media (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
+    align-items: baseline;}
 }
 
 .footer__address {
-    margin-right: 70px;
+    @media (max-width: 1199px) {
+    display: inline-flex;
+    width: calc((100% - 30px) / 2);
+    flex-direction: column;
+    text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+    margin-right: 70px;}
 }
 
 .address__item:not(:last-child) {
@@ -49,13 +58,31 @@
 
 .footer__logo {
     margin-bottom: 20px;
+
+    @media (max-width: 1199px) {
+    text-align: center;}
 }
 .footer a {
     margin-right: 0;
 }
 
 .footer__social {
-    margin-right: 93px;
+    @media (max-width: 1199px) {
+    display: inline-flex;
+    width: calc((100% - 30px) / 2);
+    flex-direction: column;
+    text-align: center;}
+    
+    @media (min-width: 1200px) {
+    margin-right: 93px;}
+}
+
+.footer__mail {
+    @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;}
 }
 
 .social__text {
@@ -96,12 +123,17 @@
     background-color: #2196F3;
 }
 
-.mail__form {
-    display: flex;
+.mail__form { 
+    @media (max-width: 1199px) {
+    justify-content: center;}
+
+    @media (min-width: 1200px) {
+    display: flex;}
  }
 
 .mail__label {
-    margin-right: 12px;
+    @media (min-width: 1200px) {
+    margin-right: 12px;}
 }
 
 .mail__label input {
@@ -119,6 +151,9 @@
     outline: transparent;
 
     color: var(--hero-text-color);
+
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;}
 }
 
 .mail__label input::placeholder {
@@ -149,6 +184,10 @@
     border-radius: 4px;
     border: 1px solid var(--accent-color);
     cursor: pointer;
+
+    @media (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;}
     }
 
 .mail__text {

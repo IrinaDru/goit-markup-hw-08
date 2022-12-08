@@ -4,13 +4,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
     }
 
     @media (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
     margin-bottom: 0;}
 }
 

@@ -49,7 +49,7 @@
 
 .nav__link {
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $tablet) {
     position: relative;
     display: flex;
     align-items: center;
@@ -83,16 +83,22 @@
 
 
 
-
-
 .contact__site {
     @media screen and (max-width: 767px) {
         display: none;}
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;}
 
     @media screen and (min-width: $desctop) {
     display: flex;
     margin-left: auto;
     align-items: center;}
+
 }
 
 .contact__site .contact__nav {
@@ -106,6 +112,7 @@
 .contact__site a {
     color: var(--title-text-color);
     text-decoration: none;
+    
 }
 
 .contact__img {
@@ -116,8 +123,7 @@
 .contact__link {
     @media screen and (min-width: $tablet) {
         display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;}
+    }
 
     @media screen and (min-width: $desctop) {
     position: relative;
@@ -140,7 +146,10 @@
 }
 
 .contact__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 1199px) {
+    padding-bottom: 10px;}
+    @media screen and (min-width: $desctop) {
+    margin-right: 30px;}
 }
 
 
