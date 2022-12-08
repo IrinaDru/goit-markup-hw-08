@@ -24,12 +24,17 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
 
     background: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: $desctop) {
+    width: 528px;
+    height: 581px;}
+
    }
 
    .modal__btn--close {
@@ -72,11 +77,14 @@
     color: #212121;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     margin-bottom: 12px;
+
+    @media screen and (min-width: $desctop) {
+    line-height: 1.15;}
    }
 
    .modal__element {
@@ -220,9 +228,13 @@
    .modal__text--agree {
     color: var(--primary-text-color);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desctop) {
+    font-size: 14px;
+    line-height: 1.7;}
    }
 
    .modal__text--agree a {
