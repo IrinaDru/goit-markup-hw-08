@@ -128,7 +128,7 @@
      <path d="M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z"/>
     </symbol>
 
-    <symbol id="icon-mobile-menu" viewBox=" 0 0 24 24">
+    <symbol id="icon-mobile-menu" viewBox=" 0 0 24 16">
      <path d="M0 2.667V0h24v2.667H0Zm0 6.666h24V6.667H0v2.666ZM0 16h24v-2.667H0V16Z" />
     </symbol>
 

@@ -56,19 +56,9 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
+        <svg class="" width="24" height="16">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+        </svg>
         </button>
         </div>
     </header>
@@ -169,7 +159,19 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo1.jpg" alt="Ігор Дем'яненко" width="270">
+                        <img 
+                        class="team__img"
+                        srcset="
+                        ./images/team/img-1_270.jpg 270w,
+                        ./images/team/img-1_354.jpg 354w,
+                        ./images/team/img-1_450.jpg 450w,
+                        ./images/team/img-1_540.jpg 540w,
+                        ./images/team/img-1_708.jpg 780w,
+                        ./images/team/img-1_900.jpg 900w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/img-1_450.jpg" 
+                        alt="Ігор Дем'яненко" 
+                        width="450">
                         <div class="employee">
                             <h3 class="employee__name">Ігор Дем'яненко</h3>
                             <p class="employee__position">Product Designer</p>
@@ -211,7 +213,19 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo2.jpg" alt="Ольга Рєпіна" width="270">
+                        <img 
+                        class="team__img"
+                        srcset="
+                        ./images/team/img-2_270.jpg 270w,
+                        ./images/team/img-2_354.jpg 354w,
+                        ./images/team/img-2_450.jpg 450w,
+                        ./images/team/img-2_540.jpg 540w,
+                        ./images/team/img-2_708.jpg 780w,
+                        ./images/team/img-2_900.jpg 900w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                        src="./images/team/img-2_450.jpg" 
+                        alt="Ольга Рєпіна" 
+                        width="450">
                         <div class="employee">
                             <h3 class="employee__name">Ольга Рєпіна</h3>
                             <p class="employee__position">Frontend Developer</p>
@@ -253,7 +267,19 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo3.jpg" alt="Микола Тарасов" width="270">
+                        <img 
+                        class="team__img"
+                        srcset="
+                        ./images/team/img-3_270.jpg 270w,
+                        ./images/team/img-3_354.jpg 354w,
+                        ./images/team/img-3_450.jpg 450w,
+                        ./images/team/img-3_540.jpg 540w,
+                        ./images/team/img-3_708.jpg 780w,
+                        ./images/team/img-3_900.jpg 900w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/img-3_450.jpg" 
+                        alt="Микола Тарасов" 
+                        width="450">
                         <div class="employee">
                             <h3 class="employee__name">Микола Тарасов</h3>
                             <p class="employee__position">Marketing</p>
@@ -295,7 +321,19 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo4.jpg" alt="Михайло Єрмаков" width="270">
+                        <img 
+                        class="team__img"
+                        srcset="
+                        ./images/team/img-4_270.jpg 270w,
+                        ./images/team/img-4_354.jpg 354w,
+                        ./images/team/img-4_450.jpg 450w,
+                        ./images/team/img-4_540.jpg 540w,
+                        ./images/team/img-4_708.jpg 780w,
+                        ./images/team/img-4_900.jpg 900w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                        src="./images/team/img-4_450.jpg" 
+                        alt="Михайло Єрмаков" 
+                        width="450">
                         <div class="employee">
                             <h3 class="employee__name">Михайло Єрмаков</h3>
                             <p class="employee__position">UI Designer</p>
@@ -572,7 +610,6 @@
             <svg class="" width="19" height="19">
                 <use href="./images/icons.svg#icon-mobile-close"></use>
             </svg>
-          
           
         </button>
   
