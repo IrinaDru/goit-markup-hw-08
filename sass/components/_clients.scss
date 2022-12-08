@@ -1,18 +1,16 @@
 .clients__list {
-
-    @media (max-width: 1199px) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @media (max-width: 1199px) {
+    flex-wrap: wrap;
     }
 
     @media (min-width: 1200px) {
-    display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 0;
-    gap: 30px;}
+    }
 }
 
 .clients__item {

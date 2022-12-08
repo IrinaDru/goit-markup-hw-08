@@ -11,12 +11,20 @@
 }
 
 .footer__address {
+       
     @media (max-width: 1199px) {
     display: inline-flex;
     width: calc((100% - 30px) / 2);
     flex-direction: column;
     text-align: center;
     }
+
+    @media (max-width: 767px) {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;} 
 
     @media (min-width: 1200px) {
     margin-right: 70px;}
@@ -72,6 +80,13 @@
     width: calc((100% - 30px) / 2);
     flex-direction: column;
     text-align: center;}
+
+    @media (max-width: 767px) {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;}
     
     @media (min-width: 1200px) {
     margin-right: 93px;}
