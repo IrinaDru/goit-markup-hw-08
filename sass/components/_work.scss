@@ -1,3 +1,9 @@
+.work { 
+@media (max-width: 1199px) {
+      display: none;
+    }
+}
+    
 .work .section__title {
     min-width: 366px;
     text-align: center;

@@ -4,9 +4,14 @@
 }
 
 .nav__site {
+
+    @media screen and (max-width: 767px) {
+        display: none;}
+
+    @media screen and (min-width: 768px) {
     display: flex;
     margin-left: auto;
-    align-items: center;
+    align-items: center; }
 }
 
 .nav__link--item { 
@@ -43,13 +48,15 @@
 }
 
 .nav__link {
+
+    @media screen and (min-width: $desctop) {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    /* outline: 1px red solid; */
+    /* outline: 1px red solid; */}
 }
 
 .nav__site .nav__link--current {
@@ -79,9 +86,13 @@
 
 
 .contact__site {
+    @media screen and (max-width: 767px) {
+        display: none;}
+
+    @media screen and (min-width: $desctop) {
     display: flex;
     margin-left: auto;
-    align-items: center;
+    align-items: center;}
 }
 
 .contact__site .contact__nav {
@@ -103,13 +114,19 @@
 }
 
 .contact__link {
+    @media screen and (min-width: $tablet) {
+        display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;}
+
+    @media screen and (min-width: $desctop) {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    /* outline: 1px red solid; */
+    /* outline: 1px red solid; */}
 }
 
 .contact__link--accent {

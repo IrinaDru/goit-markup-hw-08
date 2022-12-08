@@ -1,14 +1,23 @@
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 94px;}
 }   
 
 .section__title {
     color: var(--title-text-color);
     font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    @media (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 50px; }
 }

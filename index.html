@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="header__nav">
                 <a href="./index.html" class="header__logo logo">Web<span class="header__logo--dark">Studio</span></a>
@@ -50,8 +50,28 @@
                     </a>
                 </li>
             </ul>
+
+            <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <!-- <section class="hero">
@@ -61,7 +81,7 @@
             </div>
         </section> -->
 
-        <!-- <section class="section feature">
+        <section class="section feature">
             <div class="container">
                 <h2 class="visually__hidden">Особливості компанії</h2>
                 <ul class="feature__list">
@@ -104,9 +124,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section work">
+        <section class="section work">
             <div class="container">
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="work__list">
@@ -131,9 +151,9 @@
                         </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list">
@@ -307,9 +327,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section clients">
+        <section class="section clients">
             <div class="container">
                 <h2 class="section__title">Постійні клієнти</h2>
                 <ul class="clients__list">
@@ -372,7 +392,7 @@
 
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
 
@@ -535,7 +555,91 @@
         
     </div> -->
 
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="" width="19" height="19">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          
+          
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="./index.html" class="link link-current">Студія</a></li>
+          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="" class="link">Контакти</a></li>
+        </ul>
+
+        <ul class="mobile-contact">
+            <li><a 
+                href="tel:+380961111111" 
+                class="phone">
+                        +38 096 111 11 11
+                </a>
+            </li>
+            <li><a 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"
+                href="mailto:info@devstudio.com" 
+                class="mail">                       
+                        info@devstudio.com                        
+                </a>
+            </li>
+        </ul>
+        <ul class="mobile-social">
+            <li class="mobile-social-item">
+                <a 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"
+                href="https://www.instagram.com/" 
+                class="link">
+                Instagram
+                </a></li>
+            <li class="mobile-social-item">
+                <a 
+                target="_blank" 
+                rel="noopener noreferrer nofollow" 
+                href="https://twitter.com/"
+                class="link">
+                Twitter
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"
+                href="https://www.facebook.com/" 
+                class="link">
+                Facebook
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"
+                href="https://www.linkedin.com/" 
+                class="link">
+                LinkedIn
+                </a>
+            </li>
+        </ul>
+      </div>
+      
+
+
+
+
+
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

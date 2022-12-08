@@ -1,0 +1,150 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  }
+  
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-left: auto;
+
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    @media (min-width: 768px) {   
+          display: none;
+      }
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    fill: #2196F3;
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-color: var(--hero-text-color);
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: rgb(196, 13, 13);
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin-bottom: auto;
+    list-style: none;
+  }
+  
+  .mobile-menu .link {
+    display: block;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+  }
+
+//   .mobile-menu .link:hover,
+//   .mobile-menu .link:focus {
+//     color: var(--accent-color);
+// }
+.mobile-menu .link-current {
+    color: var(--accent-color);
+}
+
+.mobile-contact {
+    margin-bottom: 64px;
+}
+
+.mobile-contact .phone {
+    display: block;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+
+    text-decoration: none;
+  }
+
+  .mobile-contact .mail {
+    display: block;
+    padding: 0;
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+
+    text-decoration: none;
+  }
+
+  .mobile-social .link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+    text-decoration: none;
+  }
