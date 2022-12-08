@@ -10,6 +10,10 @@
 }
 
 .feature__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;}
     @media screen and (min-width: $desctop) {
         display: flex;
         flex-wrap: wrap;
@@ -18,7 +22,10 @@
 }
 
 .feature__item {
-    @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (max-width: 1199px) {
         flex-basis: calc((100% - 60px) / 2); }
 
     @media screen and (min-width: $desctop) {
