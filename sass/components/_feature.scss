@@ -20,13 +20,18 @@
     display: flex;
     flex-direction: column;
     
+    
     @media screen and (max-width: 1199px) {
         flex-basis: calc((100% - 60px) / 2); }
 
     @media screen and (min-width: $desctop) {
         flex-basis: calc((100% - 90px) / 4); }
-
-} 
+        
+}
+@media screen and (max-width: 767px) {
+    .feature__item:not(:last-child) {
+        margin-bottom: 30px;} 
+}
 
 .feature__img {
     display: flex;

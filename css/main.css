@@ -567,6 +567,11 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .feature__img {
   display: -webkit-box;
   display: -ms-flexbox;
