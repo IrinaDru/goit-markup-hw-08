@@ -196,7 +196,7 @@
 
 .contact__item:not(:last-child) {
     @media screen and (max-width: 1199px) {
-    padding-bottom: 10px;}
+    margin-bottom: 10px;}
     @media screen and (min-width: $desctop) {
     margin-right: 30px;}
 }

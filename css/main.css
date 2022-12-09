@@ -371,7 +371,7 @@ ul {
 
 @media screen and (max-width: 1199px) {
   .contact__item:not(:last-child) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
