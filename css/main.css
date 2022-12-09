@@ -1151,8 +1151,10 @@ ul {
   }
 }
 
-.nav__pointer {
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .nav__pointer {
+    margin-bottom: 15px;
+  }
 }
 
 .nav__pointer:not(:last-child) {
