@@ -5,28 +5,28 @@
 }
 
 .footer__container {
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;}
 }
 
 .footer__address {
        
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
     display: inline-flex;
     width: calc((100% - 30px) / 2);
     flex-direction: column;
     text-align: center;
     }
 
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     display: flex;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;} 
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;}
 }
 
@@ -67,7 +67,7 @@
 .footer__logo {
     margin-bottom: 20px;
 
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
     text-align: center;}
 }
 .footer a {
@@ -75,25 +75,25 @@
 }
 
 .footer__social {
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
     display: inline-flex;
     width: calc((100% - 30px) / 2);
     flex-direction: column;
     text-align: center;}
 
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     display: flex;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;}
     
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;}
 }
 
 .footer__mail {
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -139,15 +139,15 @@
 }
 
 .mail__form { 
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
     justify-content: center;}
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     display: flex;}
  }
 
 .mail__label {
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     margin-right: 12px;}
 }
 
@@ -167,11 +167,11 @@
 
     color: var(--hero-text-color);
 
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         width: 450px;
         margin-bottom: 20px;}
 
-    @media (min-width: $desctop) { 
+    @media screen and (min-width: $desctop) { 
     width: 358px;}      
 }
 
@@ -204,7 +204,7 @@
     border: 1px solid var(--accent-color);
     cursor: pointer;
 
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;}
     }

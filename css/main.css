@@ -430,7 +430,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -446,7 +446,7 @@ ul {
   text-align: center;
   margin-bottom: 30px;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
     line-height: 1.16;
@@ -557,7 +557,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -731,13 +731,13 @@ ul {
           justify-content: center;
   gap: 30px;
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients__list {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -746,13 +746,13 @@ ul {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
@@ -777,12 +777,12 @@ ul {
   -webkit-transition: color var(--hover-trans), border-color var(--hover-trans);
   transition: color var(--hover-trans), border-color var(--hover-trans);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients__link {
     width: 170px;
   }
@@ -804,7 +804,7 @@ ul {
   padding-bottom: 60px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -815,7 +815,7 @@ ul {
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__address {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -828,7 +828,7 @@ ul {
     text-align: center;
   }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer__address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -839,7 +839,7 @@ ul {
     margin-bottom: 60px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
   }
@@ -884,7 +884,7 @@ ul {
 .footer__logo {
   margin-bottom: 20px;
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__logo {
     text-align: center;
   }
@@ -894,7 +894,7 @@ ul {
   margin-right: 0;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__social {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -907,7 +907,7 @@ ul {
     text-align: center;
   }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -918,13 +918,13 @@ ul {
     margin-bottom: 60px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__social {
     margin-right: 93px;
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__mail {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -990,14 +990,14 @@ ul {
   background-color: #2196F3;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .mail__form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mail__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1005,7 +1005,7 @@ ul {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mail__label {
     margin-right: 12px;
   }
@@ -1025,13 +1025,13 @@ ul {
   outline: transparent;
   color: var(--hero-text-color);
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .mail__label input {
     width: 450px;
     margin-bottom: 20px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mail__label input {
     width: 358px;
   }
@@ -1106,7 +1106,7 @@ ul {
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .mail__btn {
     margin-left: auto;
     margin-right: auto;
@@ -1122,14 +1122,14 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .nav__btn {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 25px;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav__btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1137,7 +1137,7 @@ ul {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .nav__btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1205,13 +1205,13 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .pic__list > .pic__element {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .pic__list > .pic__element {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
@@ -1273,9 +1273,9 @@ ul {
   border-top: none;
 }
 
-@media screen and (max-width: 1199px) {
-  .pic__card:nth-child(1) {
-    padding-bottom: 56px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pic__card--hight {
+    height: 146px;
   }
 }
 
@@ -1641,7 +1641,7 @@ textarea {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -1677,7 +1677,7 @@ textarea {
   border-radius: 50%;
   outline: none;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
