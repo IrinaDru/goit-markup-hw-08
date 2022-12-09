@@ -155,7 +155,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    width: 358px;
+    width: 100%;
     height: 50px;
 
     background-color: inherit;
@@ -168,7 +168,11 @@
     color: var(--hero-text-color);
 
     @media (max-width: 1199px) {
+        width: 450px;
         margin-bottom: 20px;}
+
+    @media (min-width: $desctop) { 
+    width: 358px;}      
 }
 
 .mail__label input::placeholder {

@@ -1,10 +1,22 @@
 .nav__btn {
     display: flex;
+
+    @media (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px  - 15px;}
+
+    @media (min-width: 768px) {
     justify-content: center;
-   
-    margin-bottom: 50px; 
+    margin-bottom: 30px;}    
+
+    @media (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;} 
 }
 
+.nav__pointer {
+    margin-bottom: 15px;
+}
 .nav__pointer:not(:last-child) {
     margin-right: 8px;
 }
@@ -44,17 +56,24 @@
 }
 
 .pic__list {
-   
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .pic__list > .pic__element {
-    flex-basis: calc((100% - 60px) / 3);  
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);}
+
+    @media (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);} 
+       
 }
 .pic__link {
     display: block;
@@ -100,6 +119,11 @@
     border: 1px solid var(--borler-portfolio-pic);
     border-top: none;
    }
+   .pic__card:nth-child(1) {
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 56px;}     
+   }
+   
 
 .pic__text {
     color: var(--primary-text-color);

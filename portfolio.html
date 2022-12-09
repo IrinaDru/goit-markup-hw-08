@@ -55,19 +55,9 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
+        <svg class="" width="24" height="16">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+        </svg>
         </button>
         </div>
     </header>
@@ -88,7 +78,40 @@
             <li class="pic__element">
                     <a href="#" class="pic__link">
                         <div class="pic__thumb">
-                            <img src="./images/portfolio1.jpg" alt="Технокряк" width="370">
+                            <picture>
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./images/portfolio/img1_des@1x.webp 1x, ./images/portfolio/img1_des@2x.webp 2x"
+                                type="image/webp">
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./images/portfolio/img1_des@1x.jpg 1x, ./images/portfolio/img1_des@2x.jpg 2x"
+                                type="image/jpg">
+    
+                                <source 
+                                media="(min-width: 768px)" 
+                                srcset="./images/portfolio/img1_tab@1x.webp 1x, ./images/portfolio/img1_tab@2x.webp 2x"
+                                type="image/webp">
+                                <source 
+                                media="(min-width: 768px)" 
+                                srcset="./images/portfolio/img1_tab@1x.jpg 1x, ./images/portfolio/img1_tab@2x.jpg 2x"
+                                type="image/jpg">
+    
+                                <source 
+                                media="(max-width: 767px)" 
+                                srcset="./images/portfolio/img1_mob@1x.webp 1x, ./images/portfolio/img1_mob@2x.webp 2x"
+                                type="image/webp">
+                                <source 
+                                media="(max-width: 767px)" 
+                                srcset="./images/portfolio/img1_mob@1x.jpg 1x, ./images/portfolio/img1_mob@2x.jpg 2x"
+                                type="image/jpg">
+    
+                                <img 
+                                src="./images/portfolio/img1_mob@1x.jpg" 
+                                alt="Постер New Orlean vs Golden Star"
+                                loading="lazy">
+                            </picture>
+                            
                             <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -103,7 +126,40 @@
                 <a href="#" class="pic__link">
                     
                     <div class="pic__thumb">
-                        <img src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img2_des@1x.webp 1x, ./images/portfolio/img2_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img2_des@1x.jpg 1x, ./images/portfolio/img2_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img2_tab@1x.webp 1x, ./images/portfolio/img2_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img2_tab@1x.jpg 1x, ./images/portfolio/img2_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img2_mob@1x.webp 1x, ./images/portfolio/img2_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img2_mob@1x.jpg 1x, ./images/portfolio/img2_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img2_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -117,7 +173,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img3_des@1x.webp 1x, ./images/portfolio/img3_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img3_des@1x.jpg 1x, ./images/portfolio/img3_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img3_tab@1x.webp 1x, ./images/portfolio/img3_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img3_tab@1x.jpg 1x, ./images/portfolio/img3_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img3_mob@1x.webp 1x, ./images/portfolio/img3_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img3_mob@1x.jpg 1x, ./images/portfolio/img3_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img3_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -131,7 +220,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio4.jpg" alt="Проєкт Prime" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img4_des@1x.webp 1x, ./images/portfolio/img4_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img4_des@1x.jpg 1x, ./images/portfolio/img4_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img4_tab@1x.webp 1x, ./images/portfolio/img4_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img4_tab@1x.jpg 1x, ./images/portfolio/img4_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img4_mob@1x.webp 1x, ./images/portfolio/img4_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img4_mob@1x.jpg 1x, ./images/portfolio/img4_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img4_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -145,7 +267,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio5.jpg" alt="Проєкт Boxes" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img5_des@1x.webp 1x, ./images/portfolio/img5_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img5_des@1x.jpg 1x, ./images/portfolio/img5_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img5_tab@1x.webp 1x, ./images/portfolio/img5_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img5_tab@1x.jpg 1x, ./images/portfolio/img5_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img5_mob@1x.webp 1x, ./images/portfolio/img5_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img5_mob@1x.jpg 1x, ./images/portfolio/img5_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img5_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -159,7 +314,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img6_des@1x.webp 1x, ./images/portfolio/img6_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img6_des@1x.jpg 1x, ./images/portfolio/img6_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img6_tab@1x.webp 1x, ./images/portfolio/img6_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img6_tab@1x.jpg 1x, ./images/portfolio/img6_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img6_mob@1x.webp 1x, ./images/portfolio/img6_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img6_mob@1x.jpg 1x, ./images/portfolio/img6_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img6_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -173,7 +361,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio7.jpg" alt="Видання Limited Edition" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img7_des@1x.webp 1x, ./images/portfolio/img7_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img7_des@1x.jpg 1x, ./images/portfolio/img7_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img7_tab@1x.webp 1x, ./images/portfolio/img7_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img7_tab@1x.jpg 1x, ./images/portfolio/img7_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img7_mob@1x.webp 1x, ./images/portfolio/img7_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img7_mob@1x.jpg 1x, ./images/portfolio/img7_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img7_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -187,7 +408,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio8.jpg" alt="Проєкт LAB" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img8_des@1x.webp 1x, ./images/portfolio/img8_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img8_des@1x.jpg 1x, ./images/portfolio/img8_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img8_tab@1x.webp 1x, ./images/portfolio/img8_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img8_tab@1x.jpg 1x, ./images/portfolio/img8_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img8_mob@1x.webp 1x, ./images/portfolio/img8_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img8_mob@1x.jpg 1x, ./images/portfolio/img8_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img8_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -201,7 +455,40 @@
             <li class="pic__element">
                 <a href="#" class="pic__link">
                     <div class="pic__thumb">
-                        <img src="./images/portfolio9.jpg" alt="Growing Business" width="370">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img9_des@1x.webp 1x, ./images/portfolio/img9_des@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img9_des@1x.jpg 1x, ./images/portfolio/img9_des@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img9_tab@1x.webp 1x, ./images/portfolio/img9_tab@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img9_tab@1x.jpg 1x, ./images/portfolio/img9_tab@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img9_mob@1x.webp 1x, ./images/portfolio/img9_mob@2x.webp 2x"
+                            type="image/webp">
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img9_mob@1x.jpg 1x, ./images/portfolio/img9_mob@2x.jpg 2x"
+                            type="image/jpg">
+
+                            <img 
+                            src="./images/portfolio/img9_mob@1x.jpg" 
+                            alt="Постер New Orlean vs Golden Star"
+                            loading="lazy">
+                        </picture>
+                        
                         <div class="pic__overlay overlay">
                                 <p class="overlay__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.

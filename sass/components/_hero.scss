@@ -1,17 +1,60 @@
 .hero {
     background-color: var(--new-bgd-hero);
     text-align: center;
-    
-    background-image: 
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/hero.jpg);
+
     background-repeat: no-repeat;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
     background-position: center;
-}
+    
+    
+    // MOBILE SCREEN
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/img_mob@1x.jpg);
+
+    // MOBILE SCREEN RETINA
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/img_mob@2x.jpg);}
+      
+
+    @media screen and (min-width: 481px) {
+    // TABLET SCREEN
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/img_tab@1x.jpg);
+    }
+
+    // TABLET SCREEN RETINA
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/img_tab@2x.jpg);}
+
+    @media screen and (min-width: 769px) {
+    // DESKTOP SCREEN
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/img_des@1x.jpg);
+        }
+        
+    // DESKTOP SCREEN RETINA
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/img_des@2x.jpg);}
+
+    }
 
 .hero__container {
     padding-top: 200px;
@@ -31,6 +74,10 @@
     line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+        width: 360px;
+    }
 
     @media screen and (min-width: $desctop) {
     font-size: 44px;
