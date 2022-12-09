@@ -64,7 +64,7 @@
 
 .nav__link--current::after {
     position: absolute;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
     content: '';
     display: block;
@@ -73,6 +73,10 @@
 
     border-radius: 2px;
     background-color: var(--accent-color);
+    
+    @media screen and (min-width: $desctop) {
+    bottom: -3px;
+}
 }
 
 .nav__img {

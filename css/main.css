@@ -209,7 +209,7 @@ ul {
 
 .nav__link--current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -5px;
   left: 0;
   content: "";
   display: block;
@@ -217,6 +217,11 @@ ul {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .nav__link--current::after {
+    bottom: -3px;
+  }
 }
 
 .nav__img {
