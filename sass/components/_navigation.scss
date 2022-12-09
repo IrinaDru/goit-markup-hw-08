@@ -64,7 +64,7 @@
 
 .nav__link--current::after {
     position: absolute;
-    bottom: -5px;
+    bottom: -3px;
     left: 0;
     content: '';
     display: block;
@@ -73,10 +73,6 @@
 
     border-radius: 2px;
     background-color: var(--accent-color);
-    
-    @media screen and (min-width: $desctop) {
-    bottom: -3px;
-}
 }
 
 .nav__img {
@@ -121,11 +117,61 @@
 .contact__img {
     fill: currentColor;
     margin-right: 10px;
+
+    @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;}
+
+    &--tab {
+        @media screen and (max-width: 1199px) {
+        width: 10px;
+        height: 14px;}
+    }
+    
+    @media screen and (min-width: $desctop) {
+        width: 16px;
+        height: 12px;}
+    
+        &--tab {
+            @media screen and (min-width: 1199px) {
+            width: 10px;
+            height: 16px;}
+        }
 }
+
+.contact__mail {
+    fill: currentColor;
+    margin-right: 10px;
+
+    @media screen and (max-width: 1199px) {
+        width: 14px;
+        height: 10px;}
+
+    @media screen and (min-width: $desctop) {
+        width: 16px;
+        height: 12px;}
+        
+}
+
+.contact__phone {
+    fill: currentColor;
+    margin-right: 10px;
+
+    @media screen and (max-width: 1199px) {
+        width: 10px;
+        height: 14px}
+    
+       
+    @media screen and (min-width: $desctop) {
+        width: 10px;
+        height: 16px;}
+}
+
 
 .contact__link {
     @media screen and (min-width: $tablet) {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     @media screen and (min-width: $desctop) {

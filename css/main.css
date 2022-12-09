@@ -209,7 +209,7 @@ ul {
 
 .nav__link--current::after {
   position: absolute;
-  bottom: -5px;
+  bottom: -3px;
   left: 0;
   content: "";
   display: block;
@@ -217,11 +217,6 @@ ul {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
-@media screen and (min-width: 1200px) {
-  .nav__link--current::after {
-    bottom: -3px;
-  }
 }
 
 .nav__img {
@@ -277,10 +272,73 @@ ul {
   fill: currentColor;
   margin-right: 10px;
 }
+@media screen and (max-width: 1199px) {
+  .contact__img {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact__img--tab {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__img {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contact__img--tab {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.contact__mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .contact__mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contact__phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .contact__phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__phone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .contact__link {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
