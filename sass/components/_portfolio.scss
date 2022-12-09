@@ -100,7 +100,7 @@
     top: 0;
     left: 0;
 
-    transform: translateY(101%);
+    transform: translateY(117%);
 
     display: flex;
     align-items: center;
@@ -109,6 +109,9 @@
     background: rgba(33, 150, 243, 0.9);
 
     transition: transform var(--hover-trans);
+   
+    @media screen and (min-width: 480px) {
+    transform: translateY(101%);}
 }
 
 .pic__card {
@@ -140,10 +143,15 @@
     padding-left: 24px;
     padding-right: 24px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
     letter-spacing: 0.03em; 
     color: #ffffff;
+
+    @media screen and (min-width: 355px) {
+    font-size: 18px;
+    line-height: 1.56;
+    }
+
+
 }
 
 .section__pic .pic__title {

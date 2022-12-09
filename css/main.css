@@ -1337,8 +1337,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(101%);
-          transform: translateY(101%);
+  -webkit-transform: translateY(117%);
+          transform: translateY(117%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1352,6 +1352,12 @@ ul {
   transition: -webkit-transform var(--hover-trans);
   transition: transform var(--hover-trans);
   transition: transform var(--hover-trans), -webkit-transform var(--hover-trans);
+}
+@media screen and (min-width: 480px) {
+  .pic__overlay {
+    -webkit-transform: translateY(101%);
+            transform: translateY(101%);
+  }
 }
 
 .pic__card {
@@ -1381,10 +1387,14 @@ ul {
   padding-left: 24px;
   padding-right: 24px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 355px) {
+  .overlay__text {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .section__pic .pic__title {
